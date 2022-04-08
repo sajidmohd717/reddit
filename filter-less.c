@@ -72,9 +72,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     {
         for(int curcol = 0, count = 0; curcol<width; curcol++)
         {
-            int totalr = 0;
-            int totalg = 0;
-            int totalb = 0;
+            float totalr = 0;
+            float totalg = 0;
+            float totalb = 0;
             for(int blurrow = currow-1; blurrow <= currow+1; blurrow++)
             {
                 for(int blurcol = curcol-1; blurcol <= curcol+1; blurcol++)
